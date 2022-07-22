@@ -1,0 +1,10 @@
+.font-link {
+  font-family: "Caveat", cursive;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px #8d918e;
+}
