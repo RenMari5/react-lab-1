@@ -9,12 +9,14 @@ function App() {
       <header>
         <Header />
       </header>
-      <span>
-        <AdDesigner />
-      </span>
-      <span>
-        <Votes />
-      </span>
+      <div className="ad-votes-container">
+        <div>
+          <AdDesigner />
+        </div>
+        <div>
+          <Votes />
+        </div>
+      </div>
     </div>
   );
 }

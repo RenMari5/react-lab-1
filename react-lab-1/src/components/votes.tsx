@@ -8,6 +8,7 @@ function Votes() {
         <button>Rocky Road</button>
         <button>Americone Dream</button>
         <button>Superman</button>
+        <div></div>
       </div>
     </div>
   );

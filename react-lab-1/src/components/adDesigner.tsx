@@ -45,7 +45,7 @@ function AdDesigner() {
       <div className="card-container">
         <h4>Vote for</h4>
         <h1 style={{ fontSize: `${fontSize}px` }} onClick={handleAd}>
-          {adValue}
+          {buttonValue}
         </h1>
       </div>
       <div className="flavor-button-container">
@@ -53,8 +53,12 @@ function AdDesigner() {
         <button onClick={handleAdButton} className="button-style">
           Rocky Road
         </button>
-        <button onClick={handleAdButton}>Americone Dream</button>
-        <button onClick={handleAdButton}>Superman</button>
+        <button onClick={handleAdButton} className="button-style">
+          Americone Dream
+        </button>
+        <button onClick={handleAdButton} className="button-style">
+          Superman
+        </button>
       </div>
       <div className="color-theme-container">
         <h3>Color Theme</h3>
