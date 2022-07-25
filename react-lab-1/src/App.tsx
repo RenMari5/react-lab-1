@@ -1,6 +1,7 @@
 import "./App.css";
 import AdDesigner from "./components/adDesigner";
 import Header from "./components/header";
+import Votes from "./components/votes";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       </header>
       <span>
         <AdDesigner />
+      </span>
+      <span>
+        <Votes />
       </span>
     </div>
   );

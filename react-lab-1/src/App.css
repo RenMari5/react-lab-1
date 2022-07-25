@@ -8,3 +8,15 @@ header {
   align-items: center;
   box-shadow: 2px 2px 5px #8d918e;
 }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+
+button {
+  border-radius: 5px;
+}

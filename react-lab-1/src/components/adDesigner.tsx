@@ -3,6 +3,9 @@ import "./adDesigner.css";
 
 function AdDesigner() {
   const [buttonValue, setButtonValue] = useState("Rocky Road");
+  const [adValue, setAdValue] = useState("Rocky Road");
+  const [colorThemeValue, setColorThemeValue] = useState(false);
+  const [fontSize, setFontSize] = useState(36);
 
   const handleAdButton = () => {
     if (buttonValue === "Rocky Road") {
@@ -14,16 +17,55 @@ function AdDesigner() {
     }
   };
 
+  const handleAd = () => {
+    if (adValue === "Rocky Road") {
+      setAdValue("Rocky Road");
+    } else if (adValue === "Americone Dream") {
+      setAdValue("Americone Dream");
+    } else {
+      setAdValue("Superman");
+    }
+  };
+
+  const incrementFont = () => {
+    setFontSize(fontSize + 1);
+  };
+
+  const decrementFont = () => {
+    setFontSize(fontSize - 1);
+  };
+
+  const handleColorTheme = () => {
+    setColorThemeValue(true);
+  };
+
   return (
-    <div>
+    <div className="create-ad">
+      <h1>AdDesigner</h1>
       <div className="card-container">
-        <h3>Vote for</h3>
-        <h2>{buttonValue}</h2>
+        <h4>Vote for</h4>
+        <h1 style={{ fontSize: `${fontSize}px` }} onClick={handleAd}>
+          {adValue}
+        </h1>
       </div>
-      <div className="button-container">
-        <button onClick={handleAdButton}>Rocky Road</button>
+      <div className="flavor-button-container">
+        <h3>What to Support</h3>
+        <button onClick={handleAdButton} className="button-style">
+          Rocky Road
+        </button>
         <button onClick={handleAdButton}>Americone Dream</button>
         <button onClick={handleAdButton}>Superman</button>
+      </div>
+      <div className="color-theme-container">
+        <h3>Color Theme</h3>
+        <button>Light</button>
+        <button>Dark</button>
+      </div>
+      <div className="font-size-container">
+        <h3>Font Size</h3>
+        <button onClick={decrementFont}>Down</button>
+        {fontSize}
+        <button onClick={incrementFont}>Up</button>
       </div>
     </div>
   );

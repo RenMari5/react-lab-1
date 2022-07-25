@@ -1,0 +1,54 @@
+.create-ad {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin: 0;
+}
+
+.card-container {
+  box-shadow: 2px 2px 2px 2px #8d918e;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  width: 200px;
+  height: auto;
+}
+
+.flavor-button-container {
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.color-theme-container {
+  text-align: left;
+}
+
+.font-size-container {
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+button {
+  margin: 5px;
+  background-color: #0e3c7e;
+  color: white;
+}
+
+button:active {
+  background-color: #1e60a9;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
